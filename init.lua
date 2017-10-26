@@ -68,3 +68,5 @@ wifi.eventmon.register(wifi.eventmon.STA_DISCONNECTED, wifi_disconnect_event)
 print("Connecting to WiFi access point...")
 wifi.setmode(wifi.STATION)
 wifi.sta.config({ssid=SSID, pwd=PASSWORD})
+
+dofile("bane.lua")

@@ -1,11 +1,3 @@
---print("starting")
---ws2812.init()
---buf = ws2812.newBuffer(300, 3)
---buf:fill(0, 50, 0)
---ws2812.write(buf)
---print("done")
---
-
 -- a simple telnet server
 
 telnet_srv = net.createServer(net.TCP, 180)
@@ -39,7 +31,5 @@ telnet_srv:listen(2323, function(socket)
     end)
     socket:on("sent", sender)
 
-    print("Welcome to NodeMCU world.")
+    print("I AM...")
 end)
-
-dofile("bane.lua")
